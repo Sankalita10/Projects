@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    color:#fff;
+
+}
+
+img{
+  max-width: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.language__drop__down {
+    background: black;
+    border: none;
+    color: white;
+  }
+  
+  .language__drop__down:focus {
+    outline: none;
+  }
+  
+  .dropdown__container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .signin__button {
+    background-color: #dc030f;
+    border: #dc030f 1px solid; 
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navbar__nav__items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .header-contain h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    max-width: 650px;
+  }
+
+  .header-contain h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    
+  }
+
+  .email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: bolder;
+  }
+
+  
+  
+
+
+  section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    border-top: 8px solid #222;
+    
+  }
+
+  section1.last{
+    border-bottom: 8px solid #222;
+  }
+
+  section1:nth-child(even) div.texts{
+    order: 2;
+  }
+
+  section1 div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+    margin-top: 18px;
+  }
+
+  section1 div.texts p{
+    font-size: 1.625rem;
+  }
+
+  .media-s1{
+    position: relative;
+  }
+
+  .media-s1 img{
+    width: 400px;
+    position: absolute;
+    top:-70px
+  }
+  
+  .media-s1 video{
+    width: 293px;
+    position: absolute;
+    top: -10px;
+    left: 52px;
+  }
+
+  
+  .media-s2{
+    position: relative;
+  }
+
+  section1 div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 280px;
+    margin-left: -140px;
+    left: 50%;
+    background: black;
+    gap: 5px;
+    grid-template-columns: max-content 1fr max-content;
+  }
+
+  section1 div.download img{
+    height: 75px;
+    width: auto;
+  }
+
+  .media-s3{
+    position: relative;
+  }
+
+  .media-s3 img{
+    width: 400px;
+    position: relative;
+    z-index: 5;
+    top:-40px;
+  } 
+  
+  .media-s3 video{
+    width: 252px;
+    position: absolute;
+    top: -10px;
+    left: 79px;
+  }
+  
+  div.faq{
+    padding: 70px 30px;
+    border-bottom: 8px solid#222;
+  }
+  div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  div.questions{
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1.625rem;
+    cursor: pointer;
+  }
+
+  div.question{
+    position: relative;
+    background: #303030;
+    margin-bottom: 10px;
+
+  }
+  
+  div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+  }
+
+  div.question .header1{
+    display:block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+div.question div.content{
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+div.question input[type="checkbox"]{
+  display: none;
+}
+
+div.question input[type="checkbox"]:checked ~ div.content{
+  padding: 30px 30px;
+  max-height:600px;
+}
+
+
+
+div.question input[type="checkbox"]:checked ~ .header1 svg{
+  transform: rotate(180deg);
+}
+
+div.faq h3{
+  font-weight: normal;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.email-signup1{
+  max-width:635px;
+  margin: 0 auto;
+  background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup1 input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+  
+}
+
+.email-signup1 button{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-weight: bolder;
+}
+
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+  
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+  
+}
+
+.footer li {
+	line-height: 1.9;
+  list-style: none;
+}
+.footer h4{
+  margin-top: 40px;
+}
